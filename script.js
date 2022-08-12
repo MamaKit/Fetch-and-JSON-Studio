@@ -3,7 +3,7 @@ window.addEventListener("load", function(event) {
         // console.log("it runs")
         response.json().then( function(json) {
             // console.log(json);
-            // json.sort((a,b) => b.hoursInSpace - a.hoursInSpace);
+            json.sort((a,b) => b.hoursInSpace - a.hoursInSpace);
             const container = document.getElementById("container");
             container.innerHTML = `<h3>Total Astronauts = ${json.length}</h3>
             <hr>`;
